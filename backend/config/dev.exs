@@ -53,7 +53,7 @@ config :backend, Backend.Repo,
   username: "postgres",
   password: "postgres",
   database: "backend_dev",
-  hostname: "localhost",
+  hostname: "db",
   pool_size: 10
 
 config :backend, :crawler,

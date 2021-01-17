@@ -19,7 +19,7 @@ config :backend, BackendWeb.Endpoint,
 config :backend, Backend.Repo, queue_target: 5000
 
 config :backend, Backend.Elasticsearch.Cluster,
-  url: "http://localhost:9200",
+  url: "http://elastic:9200",
   api: Elasticsearch.API.HTTP,
   json_library: Jason
 
@@ -35,7 +35,7 @@ config :gollum,
   # 24 hrs
   refresh_secs: 86_400,
   lazy_refresh: true,
-  user_agent: "fediverse.space crawler"
+  user_agent: "fedi.inex.dev crawler"
 
 config :backend, Graph.Cache,
   # 1 hour
@@ -69,7 +69,7 @@ config :backend, :crawler,
     # dummy instances used for pleroma CI
     "pleroma.online"
   ],
-  user_agent: "fediverse.space crawler",
+  user_agent: "fedi.inex.dev crawler",
   require_bidirectional_mentions: false,
   admin_phone: System.get_env("ADMIN_PHONE"),
   twilio_phone: System.get_env("TWILIO_PHONE"),
