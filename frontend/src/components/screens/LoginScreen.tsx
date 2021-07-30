@@ -80,15 +80,15 @@ class LoginScreen extends React.PureComponent<{}, LoginScreenState> {
       <Page>
         <H1>Login</H1>
         <p className={Classes.RUNNING_TEXT}>
-          You must be the instance admin to manage how fediverse.space interacts with your instance.
+          You must be the instance admin to manage how index.community interacts with your instance.
         </p>
         <p className={Classes.RUNNING_TEXT}>
           It&apos;s currently only possible to administrate Mastodon and Pleroma instances. If you want to login with a
-          direct message, your instance must federate with mastodon.social and vice versa.
+          direct message, your instance must federate with social.inex.rocks and vice versa.
         </p>
         <p className={Classes.RUNNING_TEXT}>
           If you run another server type, you can manually opt in or out by writing to{" "}
-          <a href="https://mastodon.social/@fediversespace">@fediversespace</a>.
+          <a href="https://social.inex.rocks/@indexCommunity">@indexCommunity</a>.
         </p>
         <FormContainer error={this.state.error}>{content}</FormContainer>
       </Page>

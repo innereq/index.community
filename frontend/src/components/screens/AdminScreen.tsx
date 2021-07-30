@@ -74,7 +74,7 @@ class AdminScreen extends React.PureComponent<AdminScreenProps, AdminScreenState
           <p>{`${settings.userCount} users with ${settings.statusCount || "(unknown)"} statuses.`}</p>
           <form onSubmit={this.updateSettings}>
             {settings.userCount < 10 && (
-              <FormGroup helperText="Check this if you'd like your personal instance to be crawled by fediverse.space. This takes up to 24 hours to take effect.">
+              <FormGroup helperText="Check this if you'd like your personal instance to be crawled by index.community. This takes up to 24 hours to take effect.">
                 <Switch
                   id="opt-in-switch"
                   checked={!!settings.optIn}
@@ -85,7 +85,7 @@ class AdminScreen extends React.PureComponent<AdminScreenProps, AdminScreenState
                 />
               </FormGroup>
             )}
-            <FormGroup helperText="Check this if you don't want to your instance to be crawled. You won't appear on fediverse.space. The change is immediate.">
+            <FormGroup helperText="Check this if you don't want to your instance to be crawled. You won't appear on index.community. The change is immediate.">
               <Switch
                 id="opt-out-switch"
                 checked={!!settings.optOut}

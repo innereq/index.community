@@ -12,7 +12,7 @@ defmodule Backend.Mailer.AdminEmail do
     if admin_email != nil do
       new()
       |> to(admin_email)
-      |> from("noreply@fediverse.space")
+      |> from("noreply@index.community")
       |> subject(subject)
       |> text_body(body)
       |> Backend.Mailer.deliver!()

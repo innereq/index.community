@@ -16,8 +16,8 @@ defmodule Backend.Mailer.UserEmail do
 
     new()
     |> to(address)
-    |> from("noreply@fediverse.space")
-    |> subject("Login to fediverse.space")
+    |> from("noreply@index.community")
+    |> subject("Login to index.community")
     |> text_body(body)
     |> Backend.Mailer.deliver()
   end

@@ -26,7 +26,7 @@ defmodule Backend.Crawler.StaleInstanceManager do
     case instance_count do
       # Add m.s. as the seed and schedule the next add
       0 ->
-        add_to_queue("mastodon.social")
+        add_to_queue("mastodon.ml")
         schedule_add()
 
       # Start immediately

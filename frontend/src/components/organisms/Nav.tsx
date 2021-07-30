@@ -24,7 +24,7 @@ class Nav extends React.Component<{}, NavState> {
       <nav role="navigation">
         <Navbar fixedToTop={true}>
           <Navbar.Group align={Alignment.LEFT}>
-            <Navbar.Heading>fediverse.space</Navbar.Heading>
+            <Navbar.Heading>index.community</Navbar.Heading>
             <Navbar.Divider />
             <NavLink
               to="/"

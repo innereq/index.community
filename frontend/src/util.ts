@@ -4,11 +4,11 @@ import { range } from "lodash";
 import { DESKTOP_WIDTH_THRESHOLD, InstanceDomainPath, INSTANCE_DOMAIN_PATH } from "./constants";
 import { AppState } from "./redux/types";
 
-let API_ROOT = "http://localhost:4000/api/";
+let API_ROOT = "https://api.index.community/api/";
 if (["true", true, 1, "1"].includes(process.env.REACT_APP_STAGING || "")) {
-  API_ROOT = "https://phoenix.api-develop.fediverse.space/api/";
+  API_ROOT = "https://api.index.community/api/";
 } else if (process.env.NODE_ENV === "production") {
-  API_ROOT = "https://phoenix.api.fediverse.space/api/";
+  API_ROOT = "https://api.index.community/api/";
 }
 
 export const getFromApi = (path: string, token?: string): Promise<any> => {
