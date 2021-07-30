@@ -7,7 +7,7 @@ import Config
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :backend, BackendWeb.Endpoint,
-  http: [port: 4000],
+  http: [port: 4001],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -53,7 +53,7 @@ config :backend, Backend.Repo,
   username: "postgres",
   password: "postgres",
   database: "backend_dev",
-  hostname: "db",
+  hostname: "127.0.0.1:5435",
   pool_size: 10
 
 config :backend, :crawler,

@@ -1,8 +1,6 @@
 import { Classes, Code, H1, H2, H3 } from "@blueprintjs/core";
 import * as React from "react";
 import styled from "styled-components";
-import * as appsignalLogo from "../../assets/appsignal.png";
-import * as gitlabLogo from "../../assets/gitlab.png";
 import * as nlnetLogo from "../../assets/nlnet.png";
 import { Page } from "../atoms";
 
@@ -18,7 +16,7 @@ const AboutScreen: React.FC = () => (
   <Page>
     <H1>About</H1>
     <p className={Classes.RUNNING_TEXT}>
-      fediverse.space is a tool to visualize networks and communities on the{" "}
+      index.community is a tool to visualize networks and communities on the{" "}
       <a href="https://en.wikipedia.org/wiki/Fediverse" target="_blank" rel="noopener noreferrer">
         fediverse
       </a>
@@ -27,12 +25,16 @@ const AboutScreen: React.FC = () => (
 
     <p>
       You can follow the project on{" "}
-      <a href="https://mastodon.social/@fediversespace" target="_blank" rel="noopener noreferrer">
+      <a href="https://social.inex.rocks/@indexCommunity" target="_blank" rel="noopener noreferrer">
         Mastodon
       </a>
-      , and read more about what I&apos;m up to on my{" "}
+      .
+    </p>
+
+    <p>
+      This is a fork of the deprecated fediverse.space by{" "}
       <a href="https://www.btao.org" target="_blank" rel="noopener noreferrer">
-        website
+        Tao Bojlén
       </a>
       .
     </p>
@@ -42,7 +44,7 @@ const AboutScreen: React.FC = () => (
 
     <H3>Why can&apos;t I see details about my instance?</H3>
     <p className={Classes.RUNNING_TEXT}>
-      fediverse.space only supports servers using the Mastodon API, the Misskey API, the GNU Social API, or Nodeinfo.
+      index.community only supports servers using the Mastodon API, the Misskey API, the GNU Social API, or Nodeinfo.
       Instances with 10 or fewer users won&apos;t be crawled -- it&apos;s a tool for understanding communities, not
       individuals.
     </p>
@@ -51,11 +53,7 @@ const AboutScreen: React.FC = () => (
       When is <Code>$OTHER_FEDIVERSE_SERVER</Code> going to be added?
     </H3>
     <p className={Classes.RUNNING_TEXT}>
-      Check out{" "}
-      <a href="https://gitlab.com/taobojlen/fediverse.space/issues/24" target="_blank" rel="noopener noreferrer">
-        this GitLab issue
-      </a>
-      .
+      We are in the early forking-out phase, and don&apos;t provide any support yet. Check back later.
     </p>
 
     <H3>How do I add my personal instance?</H3>
@@ -63,10 +61,27 @@ const AboutScreen: React.FC = () => (
 
     <H3>How do you calculate the strength of relationships between instances?</H3>
     <p className={Classes.RUNNING_TEXT}>
-      fediverse.space looks at public statuses from within the last month on the public timeline of each instance. It
+      index.community looks at public statuses from within the last month on the public timeline of each instance. It
       calculates at the ratio of
       <Code>mentions of an instance / total statuses</Code>. It uses a ratio rather than an absolute number of mentions
       to reflect that smaller instances can play a large role in a community.
+    </p>
+
+    <H3>Who maintains this instance?</H3>
+    <p className={Classes.RUNNING_TEXT}>
+      index.community is an{" "}
+      <a href="https://innereq.org" target="_blank" rel="noopener noreferrer">
+        InnerEq.org
+      </a>{" "}
+      project maintained by Inex Code. You can help cover the cost of the server by becoming a{" "}
+      <a href="https://www.patreon.com/inexcode" target="_blank" rel="noopener noreferrer">
+        patron
+      </a>{" "}
+      or donating some{" "}
+      <a href="https://inex.rocks/#donate" target="_blank" rel="noopener noreferrer">
+        crypto
+      </a>
+      .
     </p>
 
     <br />
@@ -79,16 +94,6 @@ const AboutScreen: React.FC = () => (
         </a>
       </Sponsor>
       <br />
-      <Sponsor>
-        <a href="https://appsignal.com" target="_blank" rel="noopener noreferrer">
-          <img src={appsignalLogo} alt="Appsignal logo" height={50} />
-        </a>
-      </Sponsor>
-      <Sponsor>
-        <a href="https://gitlab.com" target="_blank" rel="noopener noreferrer">
-          <img src={gitlabLogo} alt="GitLab logo" height={40} />
-        </a>
-      </Sponsor>
     </SponsorContainer>
 
     <p className={Classes.RUNNING_TEXT}>Inspiration for this site comes from several places:</p>
@@ -118,9 +123,9 @@ const AboutScreen: React.FC = () => (
       </li>
     </ul>
     <p>
-      The source code for fediverse.space is available on{" "}
-      <a href="https://gitlab.com/taobojlen/fediverse.space" target="_blank" rel="noopener noreferrer">
-        GitLab
+      The source code for index.community is available on{" "}
+      <a href="https://inex.dev/inex/index.community" target="_blank" rel="noopener noreferrer">
+        Gitea
       </a>
       ; issues and pull requests are welcome!
     </p>
