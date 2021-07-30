@@ -1,12 +1,12 @@
-# fediverse.space 🌐
+# index.community 🌐
 
 The map of the fediverse that you always wanted.
 
-Read the latest updates on Mastodon: [@fediversespace](https://mastodon.social/@fediversespace)
+Read the latest updates on Mastodon: [@indexCommunity](https://social.inex.rocks/@indexCommunity)
 
 ![A screenshot of fediverse.space](screenshot.png)
 
-- [fediverse.space 🌐](#fediversespace-%f0%9f%8c%90)
+- [index.community 🌐](#indexcommunity-%f0%9f%8c%90)
   - [Requirements](#requirements)
   - [Running it](#running-it)
     - [Backend](#backend)
