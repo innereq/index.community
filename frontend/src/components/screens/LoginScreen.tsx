@@ -79,9 +79,7 @@ class LoginScreen extends React.PureComponent<{}, LoginScreenState> {
     return (
       <Page>
         <H1>Login</H1>
-        <p className={Classes.RUNNING_TEXT}>
-          You must be the instance admin to manage how index.community interacts with your instance.
-        </p>
+        <p className={Classes.RUNNING_TEXT}>You must be the instance admin to manage how fediverse.space</p>
         <p className={Classes.RUNNING_TEXT}>
           It&apos;s currently only possible to administrate Mastodon and Pleroma instances. If you want to login with a
           direct message, your instance must federate with social.inex.rocks and vice versa.

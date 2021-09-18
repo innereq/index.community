@@ -46,7 +46,7 @@ defmodule BackendWeb.Endpoint do
   )
 
   plug(Corsica,
-    origins: ["http://localhost:3001", ~r{^https://(.*\.?)index\.community$}],
+    origins: ["http://localhost:3001", ~r{^https://(.*\.?)index\.community$}, ~r{^https://(.*\.?)fediverse\.space$}],
     allow_headers: ["content-type", "token"]
   )
 

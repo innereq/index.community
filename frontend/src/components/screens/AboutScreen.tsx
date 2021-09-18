@@ -16,7 +16,7 @@ const AboutScreen: React.FC = () => (
   <Page>
     <H1>About</H1>
     <p className={Classes.RUNNING_TEXT}>
-      index.community is a tool to visualize networks and communities on the{" "}
+      fediverse.space is a tool to visualize networks and communities on the{" "}
       <a href="https://en.wikipedia.org/wiki/Fediverse" target="_blank" rel="noopener noreferrer">
         fediverse
       </a>
@@ -32,7 +32,7 @@ const AboutScreen: React.FC = () => (
     </p>
 
     <p>
-      This is a fork of the deprecated fediverse.space by{" "}
+      This is a fork of the original fediverse.space by{" "}
       <a href="https://www.btao.org" target="_blank" rel="noopener noreferrer">
         Tao Bojlén
       </a>
@@ -44,7 +44,7 @@ const AboutScreen: React.FC = () => (
 
     <H3>Why can&apos;t I see details about my instance?</H3>
     <p className={Classes.RUNNING_TEXT}>
-      index.community only supports servers using the Mastodon API, the Misskey API, the GNU Social API, or Nodeinfo.
+      fediverse.space only supports servers using the Mastodon API, the Misskey API, the GNU Social API, or Nodeinfo.
       Instances with 10 or fewer users won&apos;t be crawled -- it&apos;s a tool for understanding communities, not
       individuals.
     </p>
@@ -61,7 +61,7 @@ const AboutScreen: React.FC = () => (
 
     <H3>How do you calculate the strength of relationships between instances?</H3>
     <p className={Classes.RUNNING_TEXT}>
-      index.community looks at public statuses from within the last month on the public timeline of each instance. It
+      fediverse.space looks at public statuses from within the last month on the public timeline of each instance. It
       calculates at the ratio of
       <Code>mentions of an instance / total statuses</Code>. It uses a ratio rather than an absolute number of mentions
       to reflect that smaller instances can play a large role in a community.
@@ -69,7 +69,7 @@ const AboutScreen: React.FC = () => (
 
     <H3>Who maintains this instance?</H3>
     <p className={Classes.RUNNING_TEXT}>
-      index.community is an{" "}
+      index.community (fork domain) is an{" "}
       <a href="https://innereq.org" target="_blank" rel="noopener noreferrer">
         InnerEq.org
       </a>{" "}
@@ -123,9 +123,9 @@ const AboutScreen: React.FC = () => (
       </li>
     </ul>
     <p>
-      The source code for index.community is available on{" "}
-      <a href="https://inex.dev/inex/index.community" target="_blank" rel="noopener noreferrer">
-        Gitea
+      The source code for fediverse.space is available on{" "}
+      <a href="https://gitlab.com/fediverse.space/fediverse.space" target="_blank" rel="noopener noreferrer">
+        GitLab
       </a>
       ; issues and pull requests are welcome!
     </p>
